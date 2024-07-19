@@ -8,7 +8,7 @@
     <div class="container">
       <nav class="d-flex justify-content-between align-items-center">
         <RouterLink to="/"
-          ><img src="../assets/images/logo.png" width="126px" alt="logo"
+          ><img src="/public/images/logo.png" width="126px" alt="logo"
         /></RouterLink>
         <ul class="d-flex justify-content-between align-items-center gap-5">
           <li>
@@ -22,8 +22,8 @@
           </li>
         </ul>
         <ul class="header-btn-group d-flex justify-content-between align-items-center gap-3">
-          <li><button class="btn btn-outline-primary">立即預約</button></li>
-          <li><button class="btn btn-outline-primary">聯絡我們</button></li>
+          <li><button class="btn btn-outline-primary" type="button">立即預約</button></li>
+          <li><button class="btn btn-outline-primary" type="button">聯絡我們</button></li>
         </ul>
       </nav>
     </div>
@@ -46,5 +46,6 @@ header {
 }
 .header-btn-group button:hover {
   background-color: var(--primary-color);
+  color: #fff;
 }
 </style>

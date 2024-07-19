@@ -1,9 +1,9 @@
 <template>
   <div>
     <main class="main-container">
-      <HeaderPart :userId="getUser?.id" :cartLength="getCartLength || 0" />
+      <HeaderPart/>
     </main>
-
+    <RouterView></RouterView>
     <FooterPart />
   </div>
 </template>
@@ -73,7 +73,6 @@ export default {
 .main-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* 使主内容最小高度占满全屏 */
 }
 
 header {
